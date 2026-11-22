@@ -81,21 +81,30 @@ footer{text-align:center;padding:24px;color:#64748b;font-size:14px}
 </main>
 <footer>© <span id="year"></span> Suraj Supekar</footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-  <section id="gallery" style="padding:30px 15px; text-align:center;">
+<section id="gallery">
   <h2>My Photo Gallery</h2>
   <p>Moments & Memories of Suraj Supekar</p>
 
   <div class="gallery">
-    <div class="gallery-placeholder">Photo 1</div>
-    <div class="gallery-placeholder">Photo 2</div>
-    <div class="gallery-placeholder">Photo 3</div>
-    <div class="gallery-placeholder">Photo 4</div>
-    <div class="gallery-placeholder">Photo 5</div>
-    <div class="gallery-placeholder">Photo 6</div>
+    <img src="images/suraj%20supekar.jpeg" alt="Suraj Supekar">
+    <img src="images/suraj%20supekar1.jpeg" alt="Suraj Supekar">
+    <img src="images/suraj%20supekar2.jpeg" alt="Suraj Supekar">
+    <img src="images/suraj%20supekar3.jpeg" alt="Suraj Supekar">
+    <img src="images/suraj%20supekar4.jpeg" alt="Suraj Supekar">
+    <img src="images/suraj%20supekar5.jpeg" alt="Suraj Supekar">
+    <img src="images/suraj%20supekar6.jpeg" alt="Suraj Supekar">
+    <img src="images/suraj%20supekar7.jpeg" alt="Suraj Supekar">
+    <img src="images/suraj%20supekar8.jpeg" alt="Suraj Supekar">
+    <img src="images/suraj%20supekar9.jpeg" alt="Suraj Supekar">
   </div>
 </section>
 
 <style>
+#gallery {
+  padding: 30px 15px;
+  text-align: center;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -103,16 +112,14 @@ footer{text-align:center;padding:24px;color:#64748b;font-size:14px}
   max-width: 750px;
   margin: 20px auto;
 }
-.gallery-placeholder {
-  background: #eaf1fa;
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
   border-radius: 12px;
-  min-height: 130px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #456;
-  font-weight: bold;
 }
+
 @media (max-width: 600px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
